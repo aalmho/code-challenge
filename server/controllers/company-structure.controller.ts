@@ -9,7 +9,9 @@ export const addNode = (req, res) => {
 };
 
 export const getChildsOfNode = (req, res) => {
-  res.send("nodes");
+  const nodeId = req.params.nodeId;
+  const childNodes = companyNodes.filter((node) => node.parentNode == nodeId);
+  res.send(childNodes);
 };
 
 export const changeParentNode = (req, res) => {

@@ -27,7 +27,7 @@ export const companyNodes: CompanyStructureNode[]  = [
         nodeName: 'Anders',
         parentNode: 3,
         heightOfNode: 2,
-        managerDepartment: 'Python'
+        developerTechnology: 'Python'
     },
     {
         nodeId: '5',
