@@ -4,5 +4,6 @@ export type CompanyStructureNode = {
     parentNode: number | false,
     heightOfNode: number,
     managerDepartment?: string,
-    developerTechnology?: string
+    developerTechnology?: string,
+    children?: CompanyStructureNode[]
 };
