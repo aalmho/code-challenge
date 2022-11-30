@@ -5,17 +5,17 @@ export const getActiveNodeStructure = (req, res) => {
 };
 
 export const addNode = (req, res) => {
-  res.send("node added");
+  // TODO
 };
 
 export const getChildsOfNode = (req, res) => {
   const nodeId = req.params.nodeId;
   const childNodes = companyNodes.filter((node) => node.parentNode == nodeId);
-  res.send(childNodes);
+  res.status(200).send(childNodes);
 };
 
 export const changeParentNode = (req, res) => {
-  res.send("parent changed");
+  // TODO
 };
 
 export default { getActiveNodeStructure, addNode, getChildsOfNode, changeParentNode };
