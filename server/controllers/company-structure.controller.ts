@@ -1,5 +1,7 @@
+import { companyNodes } from "../models/data";
+
 export const getActiveNodeStructure = (req, res) => {
-  res.send("all nodes");
+  res.status(200).send(companyNodes);
 };
 
 export const addNode = (req, res) => {
